@@ -1,6 +1,6 @@
 ---
 title: "Lab 8"
-author: "Shawn Santo"
+author: "Lynn Fan"
 date: "02-28-20"
 output: 
   html_document:
@@ -39,6 +39,10 @@ and APIs.
 <br/>
 
 ## Data
+```{r packages}
+library(rvest)
+library(tidyverse)
+```
 
 ### OK tornadoes
 
@@ -49,8 +53,9 @@ tornadoes recorded in Oklahoma from 1998 - 2017. Do this in
 in folder `data`. Below, load your data with `readRDS()`
 </div>
 
-```{r load_tornadoes}
 
+```{r load_tornadoes}
+tornado <- readRDS(file ="data/tornado.RDS")
 ```
 
 <br/>
@@ -69,7 +74,7 @@ data with `readRDS()`.
 </div>
 
 ```{r load_school_districts}
-
+schooldistricts <- readRDS(file ="data/schoolboundaries.RDS")
 ```
 
 <br/>
